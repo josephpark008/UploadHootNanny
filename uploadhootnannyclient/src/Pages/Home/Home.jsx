@@ -1,6 +1,6 @@
 
 
-export default Home = ()=>{
+export function Home(){
 
 }
 
