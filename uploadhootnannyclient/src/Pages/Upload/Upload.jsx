@@ -10,7 +10,7 @@ export function Upload() {
         //get form data
         const title = e.target.title.value
         const uploader = e.target.name.value
-        const image = e.target.image.files[0]
+        const image = e.target.uploadImage.files[0]
 
         const formData = new FormData()
         formData.append('title', title);
@@ -29,18 +29,19 @@ export function Upload() {
     return (
         <>
             {/* navbar here */}
-            <section className="upload">
+            <section className="upload" onSubmit={handleUpload}>
                 <h1 className="upload__heading">Upload Yer Image</h1>
                 <form className="upload__form">
                     <label className="upload__label">Image Title</label>
                     <input type="text" name="title" placeholder="Image Title"></input>
+
                     <label className="upload__label">Uploader Name</label>
                     <input type="text" name="name" placeholder="Your Name"></input>
 
                     <label className="upload__label">Choose Image</label>
-                    <input type="file" name="image"></input>
+                    <input type="file" name="uploadImage"></input>
 
-                    <button onClick={handleUpload}>Toss yer image up on there</button>
+                    <button>Toss yer image up on there</button>
                 </form>
 
 
