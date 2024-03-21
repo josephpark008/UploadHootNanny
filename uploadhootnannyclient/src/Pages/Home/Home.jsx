@@ -1,6 +1,7 @@
+export default function Home(){
 
-
-export default Home = ()=>{
-
+  return (
+<h1>Hello</h1>
+  )
 }
 
