@@ -1,10 +1,12 @@
 .nav-bar {
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
   display: flex;
+  background-color: beige;
   justify-content: space-between  ;
   &__logo {
-    width: 15%;
+    width: 10%;
     height: 10%;
   }
 }
